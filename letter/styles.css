@@ -1,0 +1,157 @@
+:root{
+    --button-height: 2vw;
+}
+
+body {
+    position: absolute;
+    background-color: #FFD1B8;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expandible{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 70vmin;
+    height: 80vmin; 
+}
+
+.expandible-button-div{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    top: calc(35% - var(--button-height) / 2);
+    width: 100%;
+    height: var(--button-height);
+}
+
+.expandible-letter{
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+    top: 35%;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+    position: static;
+    color: black;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    position: relative;
+    display: flex;
+    height: 7vw;
+    width: 100%;
+    align-items: center;
+}
+
+.title-text{
+    left: 3%;
+    position: absolute;
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.paragraph{
+    text-align: justify;
+    width: 94%;
+    font-size: 0.9vw;
+    text-indent: 40px;
+    line-height: 1.20;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    top: 0%;
+    height: 10%;
+    width: 100%;
+}
+
+.footer-text{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-size: 1vw;
+}
+
+.kitty{
+    position: relative;
+    width: 10%;
+    height: 90%;
+    left: 85%;
+}
+
+.expandible-button{
+    position: absolute;
+    top: -20%;
+    height: 150%;
+    width: 20vw;
+    z-index: 2;
+}
+
+.gifs{
+    position: absolute;
+    top: 70%;
+}
+
+.gif1{
+    left: 10%;
+    width: 110px;
+    height: 100px;
+}
+
+.gif2{
+    left: 65%;
+    width: 110px;
+    height: 100px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .expandible{
+    transform: translateY(-20%);
+    height: 90vmin; 
+  }
+
+  :root{
+    --button-height: 6vw;
+  }
+
+  .title{
+    top: 1%;
+    height: 7%;
+  }
+
+  .title-text{
+    font-size: 2.6vw;
+  }
+
+.footer-text{
+    font-size: 2vw;
+}
+
+  .paragraph{
+    margin-top: 4%;
+    font-size: 1.98vw;
+    line-height: 1.15;
+  }
+}
